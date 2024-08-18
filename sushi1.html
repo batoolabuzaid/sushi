@@ -1,0 +1,859 @@
+<html>
+    <head>
+        <title>
+            SUSHI </title>
+            <style>
+             @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:"Courgette", cursive ;
+}
+
+a {
+  text-decoration: none;
+  color: #fffdfd;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid #ff0707;
+}
+
+.btn-secondary,
+.btn-third:hover {
+  background: #383848;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #f61f08;
+}
+
+.primary-text {
+  color: #df140c;
+}
+
+/* Header Start */
+header {
+  height: 100vh;
+  background: url("back2.jpg") center center/cover no-repeat;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+#navbar img {
+  width: 80px;
+  margin-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #980a08;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%; /* Add exmple of greeen background */
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+
+/* Header End */
+
+/* About Start */
+#about {
+  height: 80vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#menu h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  color: #201616fe;
+}
+
+#about .title p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #f84444;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-content p {
+  margin-right: 7rem;
+  line-height: 1.6;
+  color: #dc0909;
+  font-weight: 500;
+}
+
+#about img {
+  max-width: 450px;
+}
+
+#about .about-content a {
+  margin-top: 2rem;
+}
+/* About End */
+/* Offers Section start */
+#offers {
+  height: 80vh;
+  background: url("top.jpeg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#offers h2 {
+  color: #f31010;
+}
+
+#offers .title p {
+  color: #000001f0;
+  font-weight: 600;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#offers .offers-items img {
+  width: 200px;
+}
+
+#offers .offers-items h3 {
+  font-size: 25px;
+  color: #f10a0a;
+  margin: 15px 0;
+}
+
+#offers .offers-items p {
+  color: #080a0a;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Offers Section end */
+/* Menu Section Start */
+#menu {
+  background: #fbf9e5;
+  padding: 5rem 0;
+}
+
+#menu .title h2 {
+  color: #0a0a11;
+}
+#menu .title p {
+  color: #e40e0ef6;
+  font-weight: 500;
+}
+
+#menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#menu .menu-items .menu-item img {
+ 
+  width: 80px;
+  height: 20%;
+margin-right: 20px;}
+
+#menu .menu-items .menu-item h3 {
+  color: #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#menu .menu-items .menu-item span {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+#menu .menu-items .menu-item p {
+  margin-top: 10px;
+}
+
+#menu .btn {
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Menu Section End */
+/* Daytime section Start */
+#daytime {
+  background: url("back5.jpg") center center/cover fixed no-repeat;
+  color: #d52b2b;
+  text-align: cover;
+}
+
+#daytime .daytime-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+}
+
+#daytime .daytime-items h3 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+}
+
+#daytime .daytime-items p {
+  font-weight: 200;
+}
+/* Daytime section End */
+
+/* Gallery section start */
+#gallery {
+  background: url("5.png") center center/cover;
+  padding: 8rem 0 6rem;
+}
+#gallery h2 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#gallery .img-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#gallery .img-gallery img {
+  margin: 20px;
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover {
+  opacity: 1;
+}
+/* Gallery section end */
+/* Contact Section start */
+#contact {
+  background: #efedf4;
+  padding: 5rem 0;
+}
+
+#contact .container {
+  max-width: 900px;
+}
+
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .contact-info {
+  width: 50%;
+}
+
+#contact .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .contact-info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info p {
+  color: #9a9a9a;
+}
+
+#contact .contact-info p i {
+  color: #f80f0f;
+  margin-right: 5px;
+}
+
+#contact .contact-info a i {
+  color: #121010;
+  background: #ff0000;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+#contact .contact-info a i:hover {
+  background-color: #faf6f6;
+  color: #000000;
+}
+
+form {
+  width: 50%;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #e3e2dd;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form button {
+  color: #fff;
+}
+
+/* Contact Section End */
+/* Footer Start */
+#footer {
+  background-color: #000000;
+  text-align: center;
+  color: #f6f4f4;
+  padding: 15px 0;
+  font-size: 14px;
+}
+/* Footer End */
+
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  #about {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  #about .about-content p {
+    margin-right: 2rem;
+  }
+
+  #about img {
+    width: 250px;
+  }
+
+  #offers .offers-items img {
+    width: 100px;
+  }
+
+  #offers .offers-items h3 {
+    color: #030303;
+    font-size: 18px;
+  }
+
+  #menu .menu-items {
+    display: block;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+    }
+
+    header .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p {
+      font-size: 14px;
+    }
+
+    #about .about-content {
+      flex-direction: column;
+    }
+
+    #about .about-content a {
+      margin: 2rem 0;
+    }
+
+    #about img {
+      display: none;
+    }
+
+    #offers {
+      height: auto;
+      padding: 50px 20px;
+    }
+
+    #offers .offers-items {
+      flex-direction: column;
+    }
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+    #daytime .daytime-items {
+      display: block;
+      height: auto;
+      padding: 30px 0;
+    }
+
+    #daytime .daytime-items .daytime-item {
+      margin-top: 20px;
+    }
+
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+}
+
+            </style>
+            <link rel="icon" href="logo22.png" type="">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <header>
+            <div id="navbar">
+                <img src="logo22.png" alt="sushi Logo">
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <h1>Welcome to the Premier <span class="primary-text"> Sushi </span> Dining Experience</h1>
+                <p>Experience the world's most exquisite sushi creations here.</p>
+                <a href="#contact" class="btn btn-primary">Book a Table</a>
+            </div>
+        </header>
+        <!-- Header End -->
+        <main>
+            <!-- About Section Start -->
+            <section id="about">
+                <div class="container">
+                    <div class="title">
+                        <h2>The History of Sushi</h2>
+                        <p>More than 25+ years of experience</p>
+                    </div>
+                    <div class="about-content">
+                        <div>
+                            <p>Sushi began as a method of preserving fish in fermented rice in Southeast Asia and was introduced to Japan in
+                                 the 8th century. During the Edo period, it evolved into its modern form with the creation of "nigiri sushi,
+                                 " where fresh fish slices are placed on small rice balls. As Japan opened up in the 19th century, sushi spread globally, 
+                                 gaining popularity in the U.S.
+                                 with innovations like the California Roll. Today, sushi is beloved worldwide as a symbol of traditional Japanese cuisine..</p>
+                            <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                        </div>
+                        <img src="background.jpeg" alt="Pizza">
+                    </div>
+                </div>
+            </section>
+            <!-- About Section End -->
+            <!-- Offers Section Start -->
+            <section id="offers">
+                <div class="container">
+                    <div class="title">
+                        <h2>Our Special Offers</h2>
+                        <p>More than 25+ years of experience</p>
+                    </div>
+                    <div class="offers-items">
+                        <div>
+                            <img src="off.jpg" alt="Sushi Platter for 40 Pieces">
+                            <div>
+                                <h3>Sushi Platter for 40 Pieces</h3>
+                                <p>4 pieces of Nigiri Salmon
+                                    4 pieces of Double Salmon
+                                    4 pieces of Special California Roll
+                                    4 pieces of Emperor Shrimp
+                                    4 pieces of Black Mamba
+                                    4 pieces of Volcano Roll
+                                    4 pieces of Tempura
+                                    4 pieces of Dynamite Tempura
+                                    8 pieces of Crazy Crab Roll
+                                    1 Crab Salad</p>
+                                <p><del> 55.00JD</del> <span class="primary-text">40.00JD</span></p>
+                            </div>                            
+
+                        </div>
+                        <div>
+                            <img src="offer2.jpg" alt="Sushi Platter for 52 Pieces">
+                            <div>
+                                <h3>Sushi Platter for 52 Pieces
+
+                                </h3>
+                                <p>8 pieces of Crab Red Velvet
+                                    8 pieces of Philadelphia Roll
+                                    8 pieces of Volcano Roll
+                                    8 pieces of Ground Salmon
+                                    8 pieces of Crazy Crab Roll
+                                    4 pieces of Black Mamba
+                                    4 pieces of Emperor Shrimp
+                                    4 pieces of Cream Wasabi
+                                    2 Crab Salads
+                                   .</p>
+                                <p><del>65.00JD</del> <span class="primary-text">58.00JD</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="offer33.jpg" alt="Sushi Platter for 72 Pieces">
+                            <div>
+                                <h3>Sushi Platter for 72 Pieces
+                                </h3>
+                                <p>8 pieces of Crab Red Velvet
+                                    8 pieces of Emperor Shrimp
+                                    8 pieces of Black Mamba
+                                    8 pieces of Norwegian Roll
+                                    8 pieces of Cream Wasabi
+                                    8 pieces of Philadelphia Roll
+                                    8 pieces of Volcano Roll
+                                    8 pieces of Crazy Crab Roll
+                                    4 pieces of Mango Tango
+                                    4 pieces of Blue Lagoon
+                                    3 Crab Salads
+                                    1 Dynamite Poke
+                                    .</p>
+                                <p><del>115.00JD</del> <span class="primary-text">85.00JD</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Offers Section End -->
+            <!-- Menu Section Start -->
+            <section id="menu">
+                <div class="container">
+                    <div class="title">
+                        <h2>Our Special Menu</h2>
+                        <p>Order two and get third for free</p>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-items-left">
+                            <div class="menu-item">
+                                <img src="crabb.webp" alt="Crab Salad">
+                                <div>
+                                    <h3>Crab Salad <span class="primary-text">7.00JD</span></h3>
+                                    <p> crab meat, mayonnaise, lemon juice, chopped lettuce, diced avocado, fresh herbs
+                                        , diced tomatoes, chopped green onions, salt and pepper to taste,
+                                         cucumber.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="ro.webp" alt="Rocky Shrimp Roll">
+                                <div>
+                                    <h3>Rocky Shrimp Roll <span class="primary-text">22.00JD</span></h3>
+                                    <p>Shrimp ,
+                                        Sushi rice, 
+                                        Nori, 
+                                        Avocado, 
+                                        Cucumber, 
+                                        Spicy mayo, 
+                                        Soy sauce, 
+                                        Pickled ginger, 
+                                        Wasabi .</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="nir.webp" alt="Nigiri Salmon">
+                                <div>
+                                    <h3>Nigiri Salmon <span class="primary-text">15.00JD</span></h3>
+                                    <p>Salmon ,Sushi rice,Wasabi ,Soy sauce , Pickled ginger </p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="SUMO.webp" alt="Sumo Roll">
+                                <div>
+                                    <h3>Sumo Roll <span class="primary-text">10.00JD</span></h3>
+                                    <p>A large roll filled with tempura shrimp, avocado, cream cheese,
+                                         and crab, wrapped in fresh salmon, and topped with a special eel sauce.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="CRUSH.webp" alt="King Crush Roll">
+                                <div>
+                                    <h3>King Crush Roll <span class="primary-text">19.00JD</span></h3>
+                                    <p>Cream cheese, crab, tempura shrimp, topped with crab salad and
+                                         drizzled with the chef’s special sauce..</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="TUNA.webp" alt="Spicy Tuna Roll">
+                                <div>
+                                    <h3>Spicy Tuna Roll <span class="primary-text">18.00JD</span></h3>
+                                    <p>Seaweed rolls stuffed with special spicy tuna, topped with avocado 
+                                        slices and drizzled with the chef’s special sauce.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-items-right">
+                            <div class="menu-item">
+                                <img src="ki.webp" alt="Kifuyamashita Roll">
+                                <div>
+                                    <h3>Kifuyamashita Roll <span class="primary-text">11.00JD</span></h3>
+                                    <p>Rolls wrapped in unagi (grilled eel), filled with cream cheese, tempura shrimp,
+                                         crab tanuki, and avocado. The rolls are topped with slices of eel and avocado..</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="ROLL.webp" alt="Jurassic Roll">
+                                <div>
+                                    <h3>Jurassic Roll<span class="primary-text">14.00JD</span></h3>
+                                    <p>A large roll filled with fried shrimp, cream cheese, crab, and fresh 
+                                        vegetables. It is topped with salmon and shrimp salad.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="COCO.webp" alt="Coco Banana Roll">
+                                <div>
+                                    <h3>Coco Banana Roll <span class="primary-text">12.00JD</span></h3>
+                                    <p>Peanut butter, banana, peanuts, and sweetened coconut.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="BANANA.webp" alt="Fried Banana">
+                                <div>
+                                    <h3>Fried Banana <span class="primary-text">14.00JD</span></h3>
+                                    <p>Bananas coated in Japanese panko breadcrumbs, fried to perfection,
+                                         and topped with the chef's special caramel sauce and peanuts.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="Fusion.webp" alt="Crab Fusion Roll ">
+                                <div>
+                                    <h3>Crab Fusion Roll  <span class="primary-text">20.00JD</span></h3>
+                                    <p>Cream cheese, crab, apple, carrot, and orange tobiko.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="Dalmati.webp" alt="Dalmati Roll">
+                                <div>
+                                    <h3>Dalmati Roll <span class="primary-text">25.00JD</span></h3>
+                                    <p>Cream cheese, shrimp salad, mango, cucumber, white and black sesame seeds, with our special sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-third"><a href="#">EXPLORE FULL MENU</a></button>
+                </div>
+            </section>
+            <!-- Menu Section End -->
+            <!-- Daytime section start-->
+            <section id="daytime">
+                <div class="container">
+                    <div class="daytime-items">
+                        <div class="daytime-item">
+                            <img src="breckfastIcon.png" alt="Breakfast">
+                            <h3>Breakfast</h3>
+                            <p>9:00 am to 12:00 am</p>
+                        </div>
+                        <div class="daytime-item">
+                            <img src="lunchIcon.png" alt="Lunch">
+                            <h3>Lunch</h3>
+                            <p>1:00 pm to 7:00 pm</p>
+                        </div>
+                        <div class="daytime-item">
+                            <img src="dinnerIcon.png" alt="Dinner">
+                            <h3>Dinner</h3>
+                            <p>8:00 pm to 2:00 Am</p>
+                        </div>
+                        <div class="daytime-item">
+                            <img src="dessertIcon.png" alt="dessert">
+                            <h3>Dessert</h3>
+                            <p>All day</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Daytime section end-->
+            <!-- Gallery Section Start -->
+            <section id="gallery">
+                <div class="container">
+                    <h2>Our Food Gallery</h2>
+                    <div class="img-gallery">
+                        <img src="gallery1.jpg" alt="gallery1">
+                        <img src="gallery2.jpg" alt="gallery2">
+                        <img src="gallery3.jpg" alt="gallery3">
+                        <img src="gallery4.jpg" alt="gallery4">
+                        <img src="gallery5.jpg" alt="gallery5">
+                        <img src="gallary6.jpg" alt="gallery6">
+                    </div>
+                </div>
+            </section>
+            <!-- Gallary Section End -->
+            <!-- Contact Section Start -->
+            <section id="contact">
+                <div class="container">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div>
+                                <h3>ADDRESS</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> Amman , Jordan</p>
+                                <p><i class="fa-solid fa-phone"></i> Phone: 0799552778</p>
+                                <p><i class="fa-regular fa-envelope"></i> support@sushi.com</p>
+                            </div>
+                            <div>
+                                <h3>WORKING HOURS</h3>
+                                <p>9:00 am to 12:00 pm on Weekdays</p>
+                                <p>1:00 pm to 2:00 Am on Weekends</p>
+                            </div>
+                            <div>
+                                <h3>FOLLOW US</h3>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <form>
+                            <input type="text" name="Name" id="name" placeholder="Full Name">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn-third">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+        </main><footer id="footer">
+        <p> Copyright &copy; 2024 All reserved | Made by <b> Batool Abu Zeid</b></p></footer>
+    </body>
+</html>
